@@ -1,0 +1,796 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Grammar Rescue · скорая помощь по английской грамматике перед ОГЭ</title>
+  <meta name="description" content="3-дневный интенсив по английской грамматике для 9 класса перед ОГЭ. Каждый вечер — час онлайн-разбора, шпаргалки и задания в чате." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="grammar-rescue.css">
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="header" id="site-header">
+  <div class="wrap header__row">
+    <a href="#top" class="brand">
+      <div class="brand__logo">GR</div>
+      <div>
+        <div class="brand__name">Grammar Rescue</div>
+        <div class="brand__sub">скорая помощь · English · ОГЭ</div>
+      </div>
+    </a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="#about">О интенсиве</a>
+      <a href="#rhythm">Как проходит</a>
+      <a href="#program">Программа</a>
+      <a href="#audience">Для кого</a>
+      <a href="#pricing">Цена</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header__cta">
+      <a href="#signup" class="btn btn--primary btn--sm">Записаться<span class="arrow">→</span></a>
+      <button class="menu-btn" id="menu-open" aria-label="Открыть меню">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile drawer -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer__panel">
+    <div class="drawer__head">
+      <span class="h4">Меню</span>
+      <button class="menu-btn" id="menu-close" aria-label="Закрыть меню">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M6 18L18 6"/></svg>
+      </button>
+    </div>
+    <nav class="drawer__nav">
+      <a href="#about">О интенсиве</a>
+      <a href="#rhythm">Как проходит</a>
+      <a href="#program">Программа</a>
+      <a href="#audience">Для кого</a>
+      <a href="#pricing">Цена</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="drawer__cta">
+      <a href="#signup" class="btn btn--primary btn--lg" style="width: 100%;">Записаться на интенсив<span class="arrow">→</span></a>
+    </div>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- ============================================================
+     HERO — editorial, asymmetric, countdown built-in
+     ============================================================ -->
+<section class="hero" id="about">
+  <div class="wrap">
+
+    <div class="hero__top reveal">
+      <span class="pill"><span class="dot"></span> идёт набор</span>
+      <span class="eyebrow">№ 001 · ОГЭ edition · 9 класс</span>
+    </div>
+
+    <h1 class="hero__h reveal" data-delay="1">
+      Скорая помощь<br/>
+      по английской<br/>
+      <span class="h-hand">грамматике</span> <span class="h-mark">перед ОГЭ</span>
+    </h1>
+
+    <div class="hero__meta reveal" data-delay="2">
+      <div class="col">
+        <h4>что это</h4>
+        <p>Короткий онлайн-интенсив по английской грамматике для 9 класса. <b>3 дня</b>, чтобы быстро повторить главное.</p>
+      </div>
+      <div class="col">
+        <h4>как проходит</h4>
+        <p>Утром — задание в чате. <b>В&nbsp;19:00</b> — час онлайн-разбора. Перед сном — PDF-шпаргалка.</p>
+      </div>
+      <div class="col">
+        <h4>до старта интенсива</h4>
+        <div class="cd-mini" id="cd-hero" aria-live="polite">
+          <div class="cd-mini__u"><div class="cd-mini__n" data-cd="d">07</div><div class="cd-mini__l">дней</div></div>
+          <div class="cd-mini__u"><div class="cd-mini__n" data-cd="h">14</div><div class="cd-mini__l">часов</div></div>
+          <div class="cd-mini__u"><div class="cd-mini__n" data-cd="m">22</div><div class="cd-mini__l">мин</div></div>
+          <div class="cd-mini__u"><div class="cd-mini__n" data-cd="s">05</div><div class="cd-mini__l">сек</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__cta-row reveal" data-delay="3">
+      <div class="hero__cta-buttons">
+        <a href="#signup" class="btn btn--primary btn--lg">Записаться на интенсив <span class="arrow">→</span></a>
+        <a href="#program" class="btn btn--ghost btn--lg">Посмотреть программу</a>
+      </div>
+      <div class="hero__badges">
+        <span class="chip chip--lav">3 дня</span>
+        <span class="chip chip--pink">1 час в 19:00</span>
+        <span class="chip chip--yellow">формат ОГЭ</span>
+        <span class="chip chip--mint">шпаргалки included</span>
+        <span class="chip chip--blue">для 9 класса</span>
+      </div>
+    </div>
+
+    <!-- floating decorative sticker -->
+    <div class="hero__float" aria-hidden="true">
+      <div class="sticker">
+        <div class="sticker__media">
+          <!-- abstract pastel composition: stacked rounded rectangles + star -->
+          <svg viewBox="0 0 160 200" style="width: 75%;">
+            <rect x="12" y="44" width="100" height="138" rx="10" fill="#fff" stroke="#1A1530" stroke-width="1.5" transform="rotate(-6 62 113)"/>
+            <rect x="40" y="34" width="100" height="138" rx="10" fill="#FFEFAE" stroke="#1A1530" stroke-width="1.5" transform="rotate(4 90 103)"/>
+            <rect x="56" y="60" width="84" height="108" rx="8" fill="#ECE3F8" stroke="#1A1530" stroke-width="1.5"/>
+            <text x="64" y="92" font-family="Onest, sans-serif" font-size="13" font-weight="800" fill="#1A1530">A B C</text>
+            <text x="64" y="116" font-family="Caveat, cursive" font-size="22" fill="#9B7FE6">English</text>
+            <line x1="64" y1="130" x2="124" y2="130" stroke="#1A1530" stroke-width="1" stroke-linecap="round"/>
+            <line x1="64" y1="140" x2="116" y2="140" stroke="#1A1530" stroke-width="1" stroke-linecap="round" opacity=".5"/>
+            <line x1="64" y1="150" x2="120" y2="150" stroke="#1A1530" stroke-width="1" stroke-linecap="round" opacity=".5"/>
+            <path d="M138 14 L142 26 L154 28 L144 36 L148 48 L138 41 L128 48 L132 36 L122 28 L134 26 Z" fill="#9B7FE6"/>
+          </svg>
+        </div>
+        <div style="margin-top: 12px; text-align: center;">
+          <div class="hand" style="font-size: 22px; color: #1A1530; transform: rotate(-2deg); display: inline-block;">3 дня · 1 час</div>
+          <div style="font-size: 11px; color: #6E6985; letter-spacing: .12em; text-transform: uppercase; margin-top: 4px; font-weight: 600;">формат ОГЭ</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     STORIES — 4 cards answering the 4 hero questions
+     ============================================================ -->
+<section class="stories">
+  <div class="wrap">
+    <div class="stories__head reveal">
+      <div>
+        <div class="eyebrow">истории · карусель</div>
+        <div class="h3" style="margin-top: 8px;">Если коротко — то вот так</div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <div class="stories__bars" aria-hidden="true">
+          <span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span>
+        </div>
+        <span class="stories__count">04 / 04</span>
+      </div>
+    </div>
+
+    <div class="stories__grid">
+      <div class="story story--lav reveal" data-delay="1">
+        <span class="story__num">01</span>
+        <span class="story__cat">ЧТО ЭТО</span>
+        <div>
+          <div class="story__title">Короткий интенсив по <span class="mark mark--yellow">грамматике</span> перед ОГЭ</div>
+          <div class="story__sub">3 дня живых разборов, чтобы повторить главное и закрыть слабые места.</div>
+        </div>
+        <div class="story__foot">
+          <span class="hand" style="font-size: 22px; color: var(--lilac); transform: rotate(-3deg); display: inline-block;">скорая помощь ✦</span>
+        </div>
+      </div>
+
+      <div class="story story--pink reveal" data-delay="2">
+        <span class="story__num">02</span>
+        <span class="story__cat">ДЛЯ КОГО</span>
+        <div>
+          <div class="story__title">9&nbsp;класс перед ОГЭ</div>
+          <div class="story__sub">Для тех, кто хочет быстро повторить грамматику и снизить тревогу перед экзаменом. Можно и родителям рядом.</div>
+        </div>
+        <div class="story__foot">
+          <div style="display: flex; gap: -8px;">
+            <div style="width: 32px; height: 32px; border-radius: 99px; background: var(--lav-200); border: 2.5px solid #fff;"></div>
+            <div style="width: 32px; height: 32px; border-radius: 99px; background: var(--yellow-200); border: 2.5px solid #fff; margin-left: -10px;"></div>
+            <div style="width: 32px; height: 32px; border-radius: 99px; background: var(--mint-200); border: 2.5px solid #fff; margin-left: -10px;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="story story--yellow reveal" data-delay="3">
+        <span class="story__num">03</span>
+        <span class="story__cat">КАК ПРОХОДИТ</span>
+        <div>
+          <div class="story__title"><span class="mark mark--lav">3 дня</span> · 1 час в <span class="mark mark--pink">19:00</span></div>
+          <div class="story__sub" style="margin-top: 16px;">
+            <div style="display: grid; gap: 8px;">
+              <div style="display: flex; gap: 10px; align-items: center;"><span style="width: 24px; height: 24px; border-radius: 99px; background: #fff; display: grid; place-items: center;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5"/></svg></span>утром · задание в чате</div>
+              <div style="display: flex; gap: 10px; align-items: center;"><span style="width: 24px; height: 24px; border-radius: 99px; background: var(--ink); color: #fff; display: grid; place-items: center; font-size: 11px; font-weight: 700;">●</span>19:00 · онлайн-разбор</div>
+              <div style="display: flex; gap: 10px; align-items: center;"><span style="width: 24px; height: 24px; border-radius: 99px; background: #fff; display: grid; place-items: center;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>перед сном · шпаргалка</div>
+            </div>
+          </div>
+        </div>
+        <div class="story__foot"></div>
+      </div>
+
+      <div class="story story--ink reveal" data-delay="4">
+        <span class="story__num" style="color: #fff;">04</span>
+        <span class="story__cat">ЧТО ДЕЛАТЬ</span>
+        <div>
+          <div class="story__title">Записаться <br/>за <span class="mark mark--yellow" style="color: var(--ink);">1990&nbsp;₽</span></div>
+          <div class="story__sub">Места ограничены — формат живой, без потока.</div>
+        </div>
+        <div class="story__foot">
+          <a href="#signup" class="story__cta">На интенсив <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     DAILY RHYTHM
+     ============================================================ -->
+<section class="rhythm" id="rhythm">
+  <div class="wrap">
+    <div class="rhythm__head reveal">
+      <div class="eyebrow">§ 02 · ритм дня</div>
+      <h2 class="h2" style="margin-top: 12px;">Один день <span class="wavy">на интенсиве</span></h2>
+      <p class="body-lg" style="max-width: 540px; margin: 20px auto 0;">Минимум хаоса. Тебе не нужно «найти время» — расписание уже встроено в день.</p>
+    </div>
+
+    <div class="rhythm__track">
+      <div class="rhythm__step reveal" data-delay="1">
+        <div class="rhythm__icon rhythm__icon--mint">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#1A1530" stroke-width="2" stroke-linecap="round">
+            <circle cx="24" cy="24" r="8" fill="#FFD965"/>
+            <path d="M24 6v4M24 38v4M6 24h4M38 24h4M11 11l3 3M34 34l3 3M11 37l3-3M34 14l3-3"/>
+          </svg>
+        </div>
+        <div class="rhythm__time">08:00 · УТРО</div>
+        <h3 class="rhythm__title">Задание в чате</h3>
+        <p class="rhythm__text">Короткая подборка заданий в формате ОГЭ. Без лишней теории — только то, что важно повторить перед экзаменом.</p>
+      </div>
+
+      <div class="rhythm__step reveal" data-delay="2">
+        <div class="rhythm__icon rhythm__icon--lav">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#1A1530" stroke-width="2">
+            <rect x="8" y="12" width="32" height="22" rx="4" fill="#fff"/>
+            <circle cx="24" cy="23" r="4" fill="#9B7FE6"/>
+            <path d="M14 38h20" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="rhythm__time">19:00 · ВЕЧЕР</div>
+        <h3 class="rhythm__title">Онлайн-разбор</h3>
+        <p class="rhythm__text">Час с преподавателем: разбираем задания, объясняем правила простым языком, проходим типичные ловушки.</p>
+      </div>
+
+      <div class="rhythm__step reveal" data-delay="3">
+        <div class="rhythm__icon rhythm__icon--pink">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#1A1530" stroke-width="2" stroke-linecap="round">
+            <path d="M40 26a16 16 0 1 1-18-18 12 12 0 0 0 18 18z" fill="#fff"/>
+            <circle cx="32" cy="14" r="1" fill="#1A1530"/>
+            <circle cx="38" cy="20" r="1.5" fill="#1A1530"/>
+          </svg>
+        </div>
+        <div class="rhythm__time">22:00 · ПЕРЕД СНОМ</div>
+        <h3 class="rhythm__title">PDF-шпаргалка</h3>
+        <p class="rhythm__text">10–15 минут на короткую шпаргалку: закрепляем правила и спокойно закрываем день.</p>
+      </div>
+    </div>
+
+    <div class="rhythm__cta-row reveal">
+      <a href="#signup" class="btn btn--accent btn--lg">Хочу такой план подготовки <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROGRAM — 3 day cards
+     ============================================================ -->
+<section class="program" id="program">
+  <div class="wrap">
+    <div class="program__head reveal">
+      <div class="eyebrow">§ 03 · программа</div>
+      <h2 class="h2">Что успеем за <span class="mark mark--lav">3 дня</span></h2>
+    </div>
+    <p class="body-lg reveal" style="max-width: 640px; margin-bottom: 40px;">Интенсив собран вокруг реальных задач ОГЭ: тестовая грамматика, письмо и устная часть.</p>
+
+    <div class="program__cards">
+      <article class="day day--1 reveal" data-delay="1">
+        <span class="day__big">01</span>
+        <span class="day__num">ДЕНЬ 01</span>
+        <div class="day__media">
+          <svg viewBox="0 0 200 110" style="width: 70%;">
+            <rect x="20" y="20" width="80" height="80" rx="8" fill="#fff" stroke="#1A1530" stroke-width="1.5"/>
+            <text x="35" y="48" font-family="Onest" font-weight="800" font-size="14" fill="#1A1530">was/were</text>
+            <line x1="32" y1="60" x2="88" y2="60" stroke="#1A1530" stroke-width="1" opacity=".3"/>
+            <line x1="32" y1="68" x2="80" y2="68" stroke="#1A1530" stroke-width="1" opacity=".3"/>
+            <line x1="32" y1="76" x2="85" y2="76" stroke="#1A1530" stroke-width="1" opacity=".3"/>
+            <line x1="32" y1="84" x2="70" y2="84" stroke="#1A1530" stroke-width="1" opacity=".3"/>
+            <rect x="120" y="14" width="70" height="60" rx="8" fill="#FFEFAE" stroke="#1A1530" stroke-width="1.5" transform="rotate(6 155 44)"/>
+            <text x="130" y="44" font-family="Caveat" font-size="22" fill="#1A1530" transform="rotate(6 155 44)">Past</text>
+            <text x="130" y="62" font-family="Caveat" font-size="18" fill="#9B7FE6" transform="rotate(6 155 44)">Simple ✦</text>
+            <path d="M100 90 L104 96 L110 88" stroke="#9B7FE6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
+        <h3 class="day__title">Грамматика в формате ОГЭ</h3>
+        <p class="day__text">Времена, формы глаголов, порядок слов, типичные грамматические ловушки тестовой части.</p>
+        <div class="day__badge"><span class="chip chip--lav">Тестовая часть</span></div>
+      </article>
+
+      <article class="day day--2 reveal" data-delay="2">
+        <span class="day__big">02</span>
+        <span class="day__num">ДЕНЬ 02</span>
+        <div class="day__media">
+          <svg viewBox="0 0 200 110" style="width: 70%;">
+            <rect x="14" y="12" width="172" height="86" rx="8" fill="#fff" stroke="#1A1530" stroke-width="1.5"/>
+            <line x1="26" y1="30" x2="174" y2="30" stroke="#1A1530" stroke-width="1" opacity=".3"/>
+            <line x1="26" y1="42" x2="160" y2="42" stroke="#1A1530" stroke-width="1" opacity=".3"/>
+            <line x1="26" y1="54" x2="170" y2="54" stroke="#1A1530" stroke-width="1" opacity=".3"/>
+            <line x1="26" y1="66" x2="120" y2="66" stroke="#1A1530" stroke-width="1" opacity=".3"/>
+            <line x1="26" y1="78" x2="160" y2="78" stroke="#1A1530" stroke-width="1" opacity=".3"/>
+            <line x1="56" y1="42" x2="76" y2="42" stroke="#F6BDD3" stroke-width="3" stroke-linecap="round"/>
+            <line x1="90" y1="66" x2="110" y2="66" stroke="#F6BDD3" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="150" cy="20" r="14" fill="#9B7FE6"/>
+            <path d="M144 20 L148 24 L156 16" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
+        <h3 class="day__title">Письмо без досадных ошибок</h3>
+        <p class="day__text">Конструкции, которые помогают избежать ошибок в письменной части. Что портит работу — и как этого не делать.</p>
+        <div class="day__badge"><span class="chip chip--yellow">Письмо</span></div>
+      </article>
+
+      <article class="day day--3 reveal" data-delay="3">
+        <span class="day__big">03</span>
+        <span class="day__num">ДЕНЬ 03</span>
+        <div class="day__media">
+          <svg viewBox="0 0 200 110" style="width: 70%;">
+            <ellipse cx="80" cy="58" rx="50" ry="32" fill="#fff" stroke="#1A1530" stroke-width="1.5"/>
+            <path d="M50 86 Q 56 100 70 92" fill="#fff" stroke="#1A1530" stroke-width="1.5"/>
+            <text x="58" y="65" font-family="Caveat" font-size="22" fill="#1A1530">Hello!</text>
+            <ellipse cx="140" cy="42" rx="40" ry="26" fill="#ECE3F8" stroke="#1A1530" stroke-width="1.5"/>
+            <path d="M115 64 Q 122 76 130 70" fill="#ECE3F8" stroke="#1A1530" stroke-width="1.5"/>
+            <text x="122" y="48" font-family="Caveat" font-size="20" fill="#9B7FE6">Hi ✦</text>
+          </svg>
+        </div>
+        <h3 class="day__title">Устная часть: говорим проще</h3>
+        <p class="day__text">Фразы и конструкции, которые помогают отвечать увереннее и делать меньше ошибок в речи.</p>
+        <div class="day__badge"><span class="chip chip--pink">Говорение</span></div>
+      </article>
+    </div>
+
+    <div class="program__note reveal">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9B7FE6" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+      <div>После каждого дня — короткая <b>PDF-шпаргалка</b> для повторения. Останется у вас навсегда.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     AUDIENCE
+     ============================================================ -->
+<section class="audience" id="audience">
+  <div class="wrap">
+    <div class="audience__head reveal">
+      <div class="eyebrow">§ 04 · для кого</div>
+      <h2 class="h2" style="margin-top: 12px;">Узнаёшь себя? <span class="hand">отметь ✓</span></h2>
+      <p class="body-lg" style="margin-top: 16px;">Если до экзамена осталось мало времени, а грамматика всё ещё путается — это как раз тот формат, который поможет быстро собрать знания в систему.</p>
+    </div>
+
+    <div class="audience__counter reveal" id="aud-counter" aria-live="polite">
+      <span class="pill-num" id="aud-count">0</span>
+      <span id="aud-counter-text">отметь то, в чём узнаёшь себя</span>
+    </div>
+
+    <div class="audience__list" id="audience-list">
+      <button type="button" class="aud-item reveal" data-delay="1" aria-pressed="false">
+        <span class="aud-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 13 9 17 19 7"/></svg></span>
+        <span class="aud-item__text">Ребёнок путает <b>времена</b> и формы глаголов</span>
+      </button>
+      <button type="button" class="aud-item reveal" data-delay="1" aria-pressed="false">
+        <span class="aud-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 13 9 17 19 7"/></svg></span>
+        <span class="aud-item__text">В тестовой части — ошибки «по&nbsp;невнимательности»</span>
+      </button>
+      <button type="button" class="aud-item reveal" data-delay="1" aria-pressed="false">
+        <span class="aud-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 13 9 17 19 7"/></svg></span>
+        <span class="aud-item__text">Письмо даётся тяжело: непонятно, как писать без ошибок</span>
+      </button>
+      <button type="button" class="aud-item reveal" data-delay="2" aria-pressed="false">
+        <span class="aud-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 13 9 17 19 7"/></svg></span>
+        <span class="aud-item__text">В устной части ребёнок боится говорить и сбивается</span>
+      </button>
+      <button type="button" class="aud-item reveal" data-delay="2" aria-pressed="false">
+        <span class="aud-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 13 9 17 19 7"/></svg></span>
+        <span class="aud-item__text">До экзамена мало времени, а повторять всё подряд уже поздно</span>
+      </button>
+      <button type="button" class="aud-item reveal" data-delay="2" aria-pressed="false">
+        <span class="aud-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 13 9 17 19 7"/></svg></span>
+        <span class="aud-item__text">Нужна понятная структура: утром, вечером и перед сном</span>
+      </button>
+      <button type="button" class="aud-item reveal" data-delay="3" aria-pressed="false" style="grid-column: 1 / -1;">
+        <span class="aud-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 13 9 17 19 7"/></svg></span>
+        <span class="aud-item__text">Хочется не паниковать, а спокойно пройти последние дни подготовки</span>
+      </button>
+    </div>
+
+    <div class="audience__quote reveal">
+      Это не марафон на месяц.<br/>Это короткая <em>грамматическая перезагрузка</em> перед экзаменом.
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     OUTCOMES
+     ============================================================ -->
+<section class="outcomes">
+  <div class="wrap">
+    <div class="outcomes__head reveal">
+      <div class="eyebrow">§ 05 · после интенсива</div>
+      <h2 class="h2" style="margin-top: 12px;">Что будет на финише</h2>
+    </div>
+
+    <div class="outcomes__board">
+      <div class="outc reveal" data-delay="1">
+        <div class="outc__num">01</div>
+        Понятнее, где ребёнок теряет баллы
+      </div>
+      <div class="outc reveal" data-delay="2">
+        <div class="outc__num">02</div>
+        Повторены ключевые грамматические темы
+      </div>
+      <div class="outc reveal" data-delay="3">
+        <div class="outc__num">03</div>
+        Шпаргалки — для финального повторения
+      </div>
+      <div class="outc reveal" data-delay="4">
+        <div class="outc__num">04</div>
+        Больше уверенности перед экзаменом
+      </div>
+    </div>
+
+    <p class="outcomes__note reveal">
+      Мы не обещаем «пятёрку за <span class="mark mark--yellow">3 дня</span>». Но помогаем быстро и спокойно повторить то, что реально может повлиять на результат.
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================
+     TEACHER
+     ============================================================ -->
+<section class="teacher">
+  <div class="wrap">
+    <div class="teacher__grid">
+      <div class="reveal">
+        <div class="polaroid">
+          <div class="polaroid__tape" aria-hidden="true"></div>
+          <div class="polaroid__media">
+            <div class="ph"></div>
+          </div>
+          <div class="polaroid__caption">
+            <div class="polaroid__name">Анастасия</div>
+            <div class="polaroid__role">преподаватель английского</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal" data-delay="1">
+        <div class="eyebrow">§ 06 · преподаватель</div>
+        <h2 class="h2" style="margin-top: 12px;">Кто ведёт интенсив</h2>
+        <p class="body-lg" style="margin-top: 24px; max-width: 540px;">Анастасия Маклакова - преподаватель английского с 10-летним опытом и образованием МГИМО.
+
+Опыт работы в топ-20 школе Москвы. Десятки моих учеников учатся в МГУ, МГИМО и ВШЭ.</p>
+        <div class="teacher__chips">
+          <span class="chip chip--lav chip--lg">грамматика простым языком</span>
+          <span class="chip chip--yellow chip--lg">подготовка к экзаменам</span>
+          <span class="chip chip--pink chip--lg">фокус на типичных ошибках</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PRICING
+     ============================================================ -->
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div class="outcomes__head reveal" style="text-align: center; margin-bottom: 40px;">
+      <div class="eyebrow">§ 07 · цена</div>
+      <h2 class="h2" style="margin-top: 12px;">Стоимость участия</h2>
+    </div>
+
+    <div class="pricing__card reveal">
+      <div class="pricing__deco" aria-hidden="true"></div>
+      <div>
+        <div class="pricing__price"><span class="mark mark--yellow">1990</span><span class="currency"> ₽</span></div>
+        <div class="pricing__price-sub">за весь 3-дневный интенсив</div>
+        <div class="pricing__hand">всё включено ✦</div>
+        <div class="pricing__cta">
+          <a href="#signup" class="btn btn--primary btn--lg">Записаться за 1990 ₽ <span class="arrow">→</span></a>
+        </div>
+        <p class="pricing__note">Количество мест ограничено — чтобы сохранить живой формат разбора.</p>
+      </div>
+
+      <div class="includes">
+        <h4>Что входит</h4>
+        <ul>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9B7FE6" stroke-width="2.5" stroke-linecap="round"><polyline points="5 13 9 17 19 7"/></svg> 3 дня подготовки</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9B7FE6" stroke-width="2.5" stroke-linecap="round"><polyline points="5 13 9 17 19 7"/></svg> Задания утром в чате</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9B7FE6" stroke-width="2.5" stroke-linecap="round"><polyline points="5 13 9 17 19 7"/></svg> Онлайн-разборы в <b>19:00</b></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9B7FE6" stroke-width="2.5" stroke-linecap="round"><polyline points="5 13 9 17 19 7"/></svg> PDF-шпаргалки после каждого дня</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9B7FE6" stroke-width="2.5" stroke-linecap="round"><polyline points="5 13 9 17 19 7"/></svg> Материалы и поддержка в чате</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9B7FE6" stroke-width="2.5" stroke-linecap="round"><polyline points="5 13 9 17 19 7"/></svg> Фокус на формате <b>ОГЭ</b></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9B7FE6" stroke-width="2.5" stroke-linecap="round"><polyline points="5 13 9 17 19 7"/></svg> Структура: что делать утром, вечером и перед сном</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="faq__head reveal">
+      <div>
+        <div class="eyebrow">§ 08 · FAQ</div>
+        <h2 class="h2" style="margin-top: 12px;">Частые вопросы</h2>
+      </div>
+      <p class="body-lg">Если коротко: <b>да</b>, запись будет; <b>да</b>, подойдёт; <b>да</b>, мы поможем разобраться. Подробнее — ниже.</p>
+    </div>
+
+    <div class="faq__list">
+      <details class="faq-item reveal" open>
+        <summary class="faq-item__q">
+          Подойдёт ли интенсив, если ребёнок слабый в грамматике?
+          <span class="faq-item__plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </summary>
+        <div class="faq-item__a"><div class="faq-item__a-inner">Да, если задача — быстро повторить главное и разобраться в типичных ошибках. Мы не учим английский с нуля, а собираем важные темы перед экзаменом.</div></div>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary class="faq-item__q">
+          Будет ли запись разбора?
+          <span class="faq-item__plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </summary>
+        <div class="faq-item__a"><div class="faq-item__a-inner">Да, запись можно будет посмотреть, если не получится быть онлайн.</div></div>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary class="faq-item__q">
+          Сколько времени нужно в день?
+          <span class="faq-item__plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </summary>
+        <div class="faq-item__a"><div class="faq-item__a-inner">Около 30 минут утром на задания, 1 час вечером на разбор и 10–15 минут перед сном на шпаргалки.</div></div>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary class="faq-item__q">
+          Это только для ОГЭ?
+          <span class="faq-item__plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </summary>
+        <div class="faq-item__a"><div class="faq-item__a-inner">Основной фокус — ОГЭ, но интенсив может быть полезен всем, кому нужно быстро повторить школьную грамматику.</div></div>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary class="faq-item__q">
+          Что делать после оплаты?
+          <span class="faq-item__plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </summary>
+        <div class="faq-item__a"><div class="faq-item__a-inner">После оплаты вы получаете доступ в чат, где будут задания, ссылки на разборы и материалы.</div></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FINAL CTA
+     ============================================================ -->
+<section class="finale" id="signup">
+  <svg class="finale__star finale__star--1" width="120" height="120" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2 L14 9 L21 10 L15 14 L17 21 L12 17 L7 21 L9 14 L3 10 L10 9 Z"/></svg>
+  <svg class="finale__star finale__star--2" width="80" height="80" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2 L14 9 L21 10 L15 14 L17 21 L12 17 L7 21 L9 14 L3 10 L10 9 Z"/></svg>
+  <div class="wrap">
+    <h2 class="finale__h reveal">
+      Успей <span class="hand-yellow">повторить</span><br/>грамматику до экзамена
+    </h2>
+    <p class="finale__sub reveal">
+      3 дня, понятный план, вечерние разборы и шпаргалки — чтобы подойти к ОГЭ спокойнее и увереннее.
+    </p>
+    <div class="finale__cta reveal">
+      <a href="#form" class="btn btn--yellow btn--lg">Записаться на интенсив <span class="arrow">→</span></a>
+    </div>
+    <p class="finale__small reveal">Старт скоро. Не откладывайте подготовку на последний вечер.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     FORM
+     ============================================================ -->
+<section class="form" id="form">
+  <div class="wrap">
+    <div class="form__card reveal">
+      <form id="signup-form" novalidate>
+        <div class="eyebrow">§ 09 · заявка</div>
+        <h2 class="h2 form__h" style="margin-top: 8px;">Оставьте заявку</h2>
+        <p class="form__sub">Свяжемся в течение дня и пришлём ссылку на чат интенсива.</p>
+
+        <div class="form__grid">
+          <div class="field">
+            <label for="parent">Имя родителя</label>
+            <input id="parent" type="text" placeholder="Например, Мария" required>
+          </div>
+          <div class="field">
+            <label for="kid">Имя ученика</label>
+            <input id="kid" type="text" placeholder="Например, Артём">
+          </div>
+          <div class="field">
+            <label for="phone">Телефон</label>
+            <input id="phone" type="tel" placeholder="+7 ___ ___-__-__" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="вы@example.com">
+          </div>
+          <div class="field field--full">
+            <label for="channel">Удобный способ связи</label>
+            <select id="channel">
+              <option>Telegram</option>
+              <option>WhatsApp</option>
+              <option>Звонок</option>
+              <option>Email</option>
+            </select>
+          </div>
+          <div class="field field--full">
+            <label for="note">Комментарий или вопрос</label>
+            <textarea id="note" placeholder="Что важно знать о вашем ребёнке?"></textarea>
+          </div>
+        </div>
+
+        <div class="form__submit">
+          <button type="submit" class="btn btn--primary btn--lg" style="min-width: 280px;">Оставить заявку <span class="arrow">→</span></button>
+          <p class="form__legal">Нажимая «Оставить заявку», вы соглашаетесь на обработку персональных данных.</p>
+        </div>
+      </form>
+
+      <div class="form__success" id="form-success" aria-live="polite">
+        <div class="form__success-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#9B7FE6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 13 9 17 19 7"/></svg>
+        </div>
+        <h3>Спасибо!</h3>
+        <p>Мы свяжемся с вами и отправим информацию об участии в интенсиве.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="wrap footer__row">
+    <span>© Grammar Rescue · 2026 · скорая помощь по английской грамматике</span>
+    <span>Контакты · Политика · Оферта</span>
+  </div>
+</footer>
+
+<!-- sticky CTA for mobile -->
+<div class="sticky-cta">
+  <div class="sticky-cta__price">1990 ₽<small>3-дневный интенсив</small></div>
+  <a href="#signup">Записаться <span class="arrow">→</span></a>
+</div>
+
+<script>
+  // ============================================================
+  // CONFIG — set exam date here (YYYY, monthIndex 0-11, day, hr, min)
+  // OGE-2026 English: пробное расписание. Замените на нужную дату.
+  // ============================================================
+  const EXAM_DATE = new Date(2026, 4, 28, 9, 0, 0); // 28 мая 2026, 09:00
+
+  // ============================================================
+  // COUNTDOWN
+  // ============================================================
+  function tickCountdown() {
+    const now = new Date();
+    let diff = Math.max(0, EXAM_DATE - now);
+    const days = Math.floor(diff / 86400000); diff -= days * 86400000;
+    const hours = Math.floor(diff / 3600000); diff -= hours * 3600000;
+    const mins = Math.floor(diff / 60000); diff -= mins * 60000;
+    const secs = Math.floor(diff / 1000);
+
+    document.querySelectorAll('[data-cd="d"]').forEach(el => el.textContent = String(days).padStart(2, '0'));
+    document.querySelectorAll('[data-cd="h"]').forEach(el => el.textContent = String(hours).padStart(2, '0'));
+    document.querySelectorAll('[data-cd="m"]').forEach(el => el.textContent = String(mins).padStart(2, '0'));
+    document.querySelectorAll('[data-cd="s"]').forEach(el => el.textContent = String(secs).padStart(2, '0'));
+  }
+  tickCountdown();
+  setInterval(tickCountdown, 1000);
+
+  // ============================================================
+  // STICKY HEADER state
+  // ============================================================
+  const header = document.getElementById('site-header');
+  function onScroll() {
+    if (window.scrollY > 8) header.classList.add('is-scrolled');
+    else header.classList.remove('is-scrolled');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // ============================================================
+  // MOBILE DRAWER
+  // ============================================================
+  const drawer = document.getElementById('drawer');
+  document.getElementById('menu-open').addEventListener('click', () => drawer.classList.add('open'));
+  document.getElementById('menu-close').addEventListener('click', () => drawer.classList.remove('open'));
+  drawer.addEventListener('click', e => { if (e.target === drawer) drawer.classList.remove('open'); });
+  drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => drawer.classList.remove('open')));
+
+  // ============================================================
+  // REVEAL ON SCROLL
+  // ============================================================
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // ============================================================
+  // INTERACTIVE CHECKLIST
+  // ============================================================
+  const audItems = document.querySelectorAll('.aud-item');
+  const audCounter = document.getElementById('aud-counter');
+  const audCount = document.getElementById('aud-count');
+  const audCounterText = document.getElementById('aud-counter-text');
+  const audTotal = audItems.length;
+
+  function updateAudCounter() {
+    const n = document.querySelectorAll('.aud-item.checked').length;
+    audCount.textContent = n;
+    audCounter.classList.toggle('has-checks', n > 0 && n < audTotal);
+    audCounter.classList.toggle('all-checked', n === audTotal);
+
+    if (n === 0) audCounterText.textContent = 'отметь то, в чём узнаёшь себя';
+    else if (n < 3) audCounterText.textContent = `из ${audTotal} — этот интенсив пригодится`;
+    else if (n < audTotal) audCounterText.textContent = `из ${audTotal} — это точно ваш формат`;
+    else audCounterText.textContent = `из ${audTotal} — узнали себя во всём, идём готовиться`;
+  }
+
+  audItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const next = !item.classList.contains('checked');
+      item.classList.toggle('checked', next);
+      item.setAttribute('aria-pressed', next ? 'true' : 'false');
+      updateAudCounter();
+    });
+  });
+  updateAudCounter();
+
+  // ============================================================
+  // FAQ — make <details> visually animated open/close via .open class
+  // ============================================================
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('toggle', () => {
+      if (item.open) item.classList.add('open');
+      else item.classList.remove('open');
+    });
+    if (item.open) item.classList.add('open');
+  });
+
+  // ============================================================
+  // FORM SUBMIT
+  // ============================================================
+  const form = document.getElementById('signup-form');
+  const success = document.getElementById('form-success');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    form.style.display = 'none';
+    success.classList.add('show');
+    const top = success.getBoundingClientRect().top + window.scrollY - 100;
+    window.scrollTo({ top, behavior: 'smooth' });
+  });
+</script>
+
+</body>
+</html>
